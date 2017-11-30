@@ -34,12 +34,12 @@
             num_empieza = num_acaba - (num_muestra-1);
 
             for (var i = 1; i <= num_total; i++) {
-                document.getElementById("muestra"+i).style.display= "none";
+                document.getElementsByClassName(clase)[i-1].style.display= "none";
             }
     
             for (var i = num_empieza; i <= num_acaba ; i++)
             {
-                document.getElementById("muestra"+i).style.display= "block";
+                document.getElementsByClassName(clase)[i-1].style.display= "block";
 
             }
         }
