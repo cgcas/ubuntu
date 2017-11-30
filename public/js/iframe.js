@@ -3,8 +3,10 @@
          var num_total = 24;
          var num_acaba = 6;
          var num_empieza = 1;
+         var boton_izq = "btn-left";
+         var boton_dch = "btn-right";
 
-         document.getElementById("btn-left").onclick = function() {
+         document.getElementById(boton_izq).onclick = function() {
             pag--;
             
             if (pag < 1) 
@@ -13,7 +15,7 @@
             }
 
             num_acaba = pag * num_muestra;
-            num_empieza = num_acaba - 5;
+            num_empieza = num_acaba - (num_muestra-1);
 
             for (var i = 1; i <= num_total; i++) {
                 document.getElementById("muestra"+i).style.display= "none";
@@ -26,7 +28,7 @@
             }
          };
 
-         document.getElementById("btn-right").onclick = function() {
+         document.getElementById(boton_dch).onclick = function() {
             pag++;
             
             if (pag > num_total/num_muestra) 
@@ -35,7 +37,7 @@
             }
 
             num_acaba = pag * num_muestra;
-            num_empieza = num_acaba - 5;
+            num_empieza = num_acaba - (num_muestra-1);
 
             for (var i = 1; i <= num_total; i++) {
                 document.getElementById("muestra"+i).style.display= "none";
