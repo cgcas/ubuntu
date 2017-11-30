@@ -48,12 +48,9 @@
             {
                 pag = num_total/num_muestra;
             }
-           alert("la pagina es: "+pag);
 
             num_acaba = pag * num_muestra;
             num_empieza = num_acaba - 5;
-
-            alert("El numero para empezar a mostrar es "+num_empieza+" y acaba en "+num_acaba);
 
             for (var i = 1; i <= num_total; i++) {
                 document.getElementById("muestra"+i).style.display= "none";
@@ -67,19 +64,15 @@
          };
 
          document.getElementById("btn-right").onclick = function() {
-            alert("le ha dado al boton derecho");
             pag++;
             
             if (pag > num_total/num_muestra) 
             {
                 pag = 1;
             }
-            alert("la pagina es: "+pag);
 
             num_acaba = pag * num_muestra;
             num_empieza = num_acaba - 5;
-
-            alert("El numero para empezar a mostrar es "+num_empieza+" y acaba en "+num_acaba);
 
             for (var i = 1; i <= num_total; i++) {
                 document.getElementById("muestra"+i).style.display= "none";
