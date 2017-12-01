@@ -31,15 +31,15 @@ document.getElementById(boton_dch).onclick = function() {
 
 function cambioVista() {
 
-    for (var i = num_empieza; i <= num_acaba; i++) {
-        document.getElementsByClassName(clase)[i-1].style.display= "none";
+    for (var i = num_empieza - 1; i < num_acaba; i++) {
+        document.getElementsByClassName(clase)[i].style.display= "none";
     }
 
     num_acaba = pag * num_muestra;
     num_empieza = num_acaba - (num_muestra-1);
 
-    for (var i = num_empieza; i <= num_acaba ; i++)
+    for (var i = num_empieza - 1; i < num_acaba ; i++)
     {
-            document.getElementsByClassName(clase)[i-1].style.display= "block";
+            document.getElementsByClassName(clase)[i].style.display= "block";
     }
 }
