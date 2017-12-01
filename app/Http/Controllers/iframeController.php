@@ -10,10 +10,11 @@ class iframeController extends Controller
     
     public function index()
     {
+        $num_categorias = 23;
+    	
+        $categories = [];
 
-    	$categories = [];
-
-    	for ($i=1; $i <= 24 ; $i++) { 
+    	for ($i=1; $i <= $num_categorias ; $i++) { 
     		$categories[] = [
     			'id' => $i,
 				'name' => 'categoria'.$i,
