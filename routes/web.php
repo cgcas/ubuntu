@@ -11,4 +11,5 @@
 |
 */
 
-Route::get('/', 'iframeController@index');
+//Route::get('/', 'iframeController@index');
+Route::get('/', 'redisController@index');

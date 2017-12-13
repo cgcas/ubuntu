@@ -10,7 +10,7 @@ class iframeController extends Controller
     
     public function index()
     {
-        $num_categorias = 24;
+        $num_categorias = 25;
     	
         $categories = [];
 
